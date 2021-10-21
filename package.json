@@ -13,8 +13,8 @@
         "postinstall": "husky install",
         "release": "standard-version",
         "commit": "commit",
-        "lint": " eslint {src,test}/**/*.{js,ts,tsx}",
-        "format": "eslint --fix {src,test}/**/*.{js,ts,tsx}",
+        "lint": " eslint {src,__test__}/**/*.{js,ts,tsx}",
+        "format": "eslint --fix {src,__test__}/**/*.{js,ts,tsx}",
         "build": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
         "gendoc": "typedoc ./src  --out dist/docs --name rollup-jest-boilerplate --hideGenerator"
     },
