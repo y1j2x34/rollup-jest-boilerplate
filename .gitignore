@@ -104,3 +104,9 @@ dist
 .tern-port
 
 report
+
+lib
+
+docs
+
+tmp

@@ -6,7 +6,10 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
+
+const inputFile = path.resolve(process.cwd(), 'src/index.ts');
 
 const outputConfig = [
     [pkg.browser, 'umd'],
@@ -16,7 +19,7 @@ const outputConfig = [
 
 const rollupConfig: RollupOptions = {
     output: outputConfig,
-    input: 'src/index.ts',
+    input: inputFile,
     plugins: [
         nodeResolve({
             mainFields: ['main', 'browser', 'jsnext']
@@ -33,7 +36,11 @@ const rollupConfig: RollupOptions = {
 
 export default rollupConfig;
 
-function createOutputConfig(file: string, format: string, cfg: OutputOptions = {}): OutputOptions {
+function createOutputConfig(
+    file: string,
+    format: string,
+    cfg: OutputOptions = {}
+): OutputOptions {
     return Object.assign(
         {
             file: path.resolve(process.cwd(), file),
