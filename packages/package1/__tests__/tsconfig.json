@@ -1,9 +1,3 @@
 {
-    "extends": "../../../tsconfig.test.json",
-    "compilerOptions": {
-        "paths": {
-            "@src/": ["../src"]
-        }
-    },
-    "include": ["./src"]
+    "extends": "../../../tsconfig.test.json"
 }
