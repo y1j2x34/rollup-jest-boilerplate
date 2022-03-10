@@ -17,7 +17,7 @@ export default {
     moduleFileExtensions: ['ts', 'js'],
     collectCoverage: true,
     collectCoverageFrom: [`${basedir}/src/**/*.ts`],
-    coveragePathIgnorePatterns: ['/__test__/', '/node_modules/'],
+    coveragePathIgnorePatterns: ['/__tests__/', '/node_modules/'],
     coverageProvider: 'v8',
     coverageDirectory: `${basedir}/report/coverage/`,
     coverageReporters: ['json', 'html', 'text-summary'],
