@@ -21,16 +21,6 @@
         "gendoc": "lerna exec -- zx ../../scripts/typedoc.mjs",
         "clear": "lerna exec -- zx ../../scripts/clear.mjs"
     },
-    "lint-staged": {
-        "{src,test}/**/*.{js,ts,tsx}": [
-            "npm run format",
-            "git add"
-        ],
-        "scripts/**/*.mjs": [
-            "npm run format",
-            "git add"
-        ]
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/y1j2x34/rollup-jest-boilerplate.git"
