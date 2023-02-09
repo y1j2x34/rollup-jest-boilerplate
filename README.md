@@ -32,7 +32,7 @@ Lints the code using ESLint and to ensure that the code is written according to 
 
 Formats the code using Eslint to ensure that the code is clean, readable, and consistent.
 
-## Technologic Used
+## 🛠️ Technologies Used
 
 - Rollup: A module bundler for JavaScript, used to build and package the project.
 - Jest: A JavaScript testing framework, used to write and run tests for the project.
