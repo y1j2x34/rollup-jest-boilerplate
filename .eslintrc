@@ -1,18 +1,27 @@
 {
     "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 2020,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true,
-            "impliedStrict": true
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "extends": [
+                "plugin:@typescript-eslint/recommended"
+            ],
+            "parserOptions": {
+                "ecmaVersion": 2020,
+                "sourceType": "module",
+                "ecmaFeatures": {
+                    "jsx": true,
+                    "impliedStrict": true
+                },
+                "project": ["./tsconfig.json", "./__tests__/tsconfig.json", "./examples/tsconfig.json"]
+
+            }
         },
-        "project": ["./tsconfig.json", "test/tsconfig.json"]
-    },
-    "extends": [
-        "plugin:@typescript-eslint/recommended", //  Use the recommended rules from the @typescript-eslint/eslint-plugin
-        "plugin:prettier/recommended" // Enables eslint-plugin-prettier and eslint-config-prettier
+        {
+            "files": ["*.mjs", "*.js", "*.jsx"]
+        }
     ],
+    "plugins": ["@typescript-eslint", "prettier"],
     "rules": {
         "prettier/prettier": "error",
         "no-var-require": "off",
