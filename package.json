@@ -1,12 +1,11 @@
 {
-    "name": "rollup-jest-boilerplate",
+    "name": "{{name}}",
     "version": "1.0.0",
-    "description": "",
+    "description": "{{description}}",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
     "browser": "dist/index.umd.js",
     "distDir": "dist/",
-    "library": "boilerplate",
     "types": "dist/index.d.ts",
     "scripts": {
         "test": "cross-env NODE_ENV=test jest",
@@ -30,7 +29,7 @@
         "url": "git+https://github.com/y1j2x34/rollup-jest-boilerplate.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "{{author}}",
     "license": "ISC",
     "devDependencies": {
         "@commitlint/cli": "^17.4.4",

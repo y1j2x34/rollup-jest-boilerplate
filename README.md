@@ -2,7 +2,7 @@
 
 A basic starter template for building a Typescript project using Rollup, Jest.
 
-## 🚀 Getting started 
+## 🚀 Getting started
 
 To get started, clone the repository and install the dependencies using npm.
 
@@ -10,6 +10,12 @@ To get started, clone the repository and install the dependencies using npm.
 git clone https://github.com/y1j2x34/rollup-jest-boilerplate.git
 cd rollup-jest-boilerplate
 npm i
+```
+
+or using npm-init:
+
+```shell
+npm init with y1j2x34/rollup-jest-boilerplate
 ```
 
 ### 💻 Available Scripts
@@ -39,9 +45,6 @@ Formats the code using Eslint to ensure that the code is clean, readable, and co
 - Eslint: A lingting for JavaScript, used to enforce coding style and best practices.
 - Commentlint: A linting tool for commit messages, used to enforce a consistent commit message format.
 
-## 📃 License 
+## 📃 License
 
 This project is lincensed under the MIT License.
-
-
-
