@@ -12,12 +12,6 @@ cd rollup-jest-boilerplate
 npm i
 ```
 
-or using npm-init:
-
-```shell
-npm init with y1j2x34/rollup-jest-boilerplate
-```
-
 ### 💻 Available Scripts
 
 In the project directory, you can run the following npm commands:
